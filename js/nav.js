@@ -16,9 +16,9 @@ window.onscroll = function() {
     navBars.forEach(navBar => {
       if (top >= 500 && top <= navBarEnd.offsetTop - 500) {
      
-        navBar.classList.add("active");
+        navBar.classList.add("active-nav");
     } else {
-        navBar.classList.remove("active");
+        navBar.classList.remove("active-nav");
     }
     });
 }

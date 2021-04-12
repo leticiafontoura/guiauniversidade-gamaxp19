@@ -27,70 +27,68 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 </head>
 
-<body background="img/GuiaUni-Foto01.png">
+<body>
     <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PQMVL26"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-
-    <nav class="navBar">
-        <div class="nav-logo">
-                <a href="index.html"><img src="img/GuiaUni-Logo-v1.0.svg" alt=""></a>
-            </div>
-    
-            <div class="navBar-link navBar-link-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
-            
-                <ul class="navBar-items">
-                <!-- <li class="navBar-link">
-                    <a class="navBar-a" href="ebook.html">E-book</a>
-                </li> -->
-                <!-- <li class="navBar-link">
-                    <a class="navBar-a" href="depoimentos.html">Depoimentos</a>
-                </li> -->
-                <li class="navBar-link">
-                    <a class="navBar-a" href="quem-somos.html">Quem Somos</a>
-                </li>
-                <li class="navBar-link">
-                    <a class="navBar-a" href="formulario.html">Cadastre-se</a>
-                </li>
-                <li id="nav-search-input">
-                    <input type="text" id="title" placeholder="Buscar..." />
-                    <ul id="artigos"></ul>
-                </li>
-            </ul>
-    </nav>
-
-
-<section id="message">
-    <h1>Bem vindx ao Guia Universidade!</h1>
-
-    <p>Faça seu cadastro e acompanhe as novidades.</p>
-
-    <h1>Dados</h1>
-
-    <form name="captura" action="" method="POST" id="contactForm">
-            
-                <label for="name">Nome Completo</label>
-               
-                <input type="text" class="form-control" placeholder="Qual seu nome?" required="required" id="name">
+    <div style="background-image: url('img/GuiaUni-Foto01.png'); background-size: cover; min-height: 100vh; position: relative;">
         
-           
-                <label for="email">E-mail</label>
-               
-                <input type="email" class="form-control" placeholder="Qual seu e-mail?" required="required" id="email">
-           
-            
-                <button class="btn-pagform" type="submit" id="submit-btn">ENVIAR</button>
- 
-            
+        <nav class="navBar">
+            <div class="nav-logo">
+                    <a href="index.html"><img src="img/GuiaUni-Logo-v1.0.svg" alt=""></a>
+                </div>
+        
+                <div class="navBar-link navBar-link-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                
+                    <ul class="navBar-items">
+                    <!-- <li class="navBar-link">
+                        <a class="navBar-a" href="ebook.html">E-book</a>
+                    </li> -->
+                    <!-- <li class="navBar-link">
+                        <a class="navBar-a" href="depoimentos.html">Depoimentos</a>
+                    </li> -->
+                    <li class="navBar-link">
+                        <a class="navBar-a" href="quem-somos.html">Quem Somos</a>
+                    </li>
+                    <li class="navBar-link">
+                        <a class="navBar-a" href="formulario.html">Cadastre-se</a>
+                    </li>
+                    <li id="nav-search-input">
+                        <input type="text" id="title" placeholder="Buscar..." />
+                        <ul id="artigos"></ul>
+                    </li>
+                </ul>
+        </nav>
 
+    
+        <div class="form-wrapper" style="display: flex;">
+            <section id="message">
+                <h1>Bem vindx ao Guia Universidade!</h1>
+                <p>Faça seu cadastro e acompanhe as novidades.</p>
+                <h1>Dados</h1>
+                <form name="captura" action="" method="POST" id="contactForm">
+            
+                            <label for="name">Nome Completo</label>
+            
+                            <input type="text" class="form-control" placeholder="Qual seu nome?" required="required" id="name">
+            
+            
+                            <label for="email">E-mail</label>
+            
+                            <input type="email" class="form-control" placeholder="Qual seu e-mail?" required="required" id="email">
+            
+            
+                            <button class="btn-pagform" type="submit" id="submit-btn">ENVIAR</button>
+            
+            
+                    </form>
+            </section>
+        </div>
 
-        </form>
-    </div>
-</section>
-    <div class="footer">
+    <div class="footer" style="position: absolute; width: 100%; bottom: 0">
             <div class="ft-copyright">
                 <span>2019 Copyright © - Guia Universidade</span> </br>
     
@@ -108,6 +106,7 @@
             </div>
     
         </div>
+    </div>
 
 
 <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>

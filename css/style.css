@@ -28,10 +28,10 @@ header #botao{
     font-family: 'Montserrat'; 
     background:whitesmoke; 
     max-width: 450px; 
-    margin: 100px auto 16px; 
     padding: 32px 24px; 
     border-radius: 3px;
     font-weight: bold;
+    margin: 50px auto;
  }
 
 #message h2 {
@@ -414,7 +414,7 @@ background-image: linear-gradient(rgba(0,0,0, .5), rgba(0,0,0, 0.5)),
 
 /* article nav after scrolling */
 
-.active {
+.active-nav {
     position: fixed;
     bottom: 0;
     background-color: #db0f54;
@@ -427,12 +427,12 @@ background-image: linear-gradient(rgba(0,0,0, .5), rgba(0,0,0, 0.5)),
     z-index: 10;
 }
 
-.active li {
+.active-nav li {
     list-style-type: decimal;
     margin: 0 5px 0 5px;
 }
 
-.active li a {
+.active-nav li a {
     padding-right: 10px;
     color: white;
 }
